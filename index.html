@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Trying to achieve a perfect score at google PageSpeed">
-    <title>Perfect PageSpeed</title>
-    <!-- All critical CSS is inlined to prevent render-blocking requests -->
-    <style>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description"
+            content="Trying to achieve a perfect score at google PageSpeed">
+        <title>Perfect PageSpeed</title>
+        <!-- All critical CSS is inlined to prevent render-blocking requests -->
+        <style>
         body {
             font-family: sans-serif;
             display: flex;
@@ -21,9 +22,21 @@
             color: #007bff;
         }
     </style>
-</head>
-<body>
-    <h1>Teste!</h1>
-    <!-- No external JavaScript files are used -->
-</body>
+    </head>
+    <body>
+        <header role="banner">
+            <p>Banner section</p>
+        </header>
+        <nav role="navigation">
+            <ul>
+                <li>Navigation items</li>
+            </ul>
+        </nav>
+        <main role="main">
+            <p>Main content.</p>
+        </main>
+        <footer role="contentinfo">
+            <p>Footer.</p>
+        </footer>
+    </body>
 </html>
