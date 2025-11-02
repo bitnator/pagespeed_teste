@@ -1,1 +1,1 @@
-"# first attempt to achieve a perfect score at google pagespeed" 
+Website made for me to learn how to achieve a perfect score at Google PageSpeed
