@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,35 +8,69 @@
         <title>Perfect PageSpeed</title>
         <!-- All critical CSS is inlined to prevent render-blocking requests -->
         <style>
-        body {
-            font-family: sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0;
-            color: #333;
-        }
-        h1 {
-            color: #007bff;
-        }
+            body {
+                margin: 0;
+                margin-top: -16px;
+            }
+            .container{
+                width: 100%;
+                min-height: 600px;
+                background-color: rgb(227, 229, 240);
+            }
+
+            header {
+                text-align: center;
+                padding-top: 22px;
+            }
+
+            nav {
+                text-align: center;
+                background: #fcf5ff;
+                padding: 1px;
+            }
+
+            ul {
+                list-style: none;
+            }
+
+            main {
+                text-align: center;
+                padding-top: 22px;
+            }
+
+            footer {
+                position: absolute;
+                bottom: -22px;
+                /* left: 44px; */
+                padding-left: 44px;
+                background: #e3e3e3;
+                width: -webkit-fill-available;
+                /* background-color: black; */
+            }
+
+            p {
+                width: auto;
+            }
     </style>
     </head>
     <body>
-        <header role="banner">
-            <p>Banner section</p>
-        </header>
-        <nav role="navigation">
-            <ul>
-                <li>Navigation items</li>
-            </ul>
-        </nav>
-        <main role="main">
-            <p>Main content.</p>
-        </main>
-        <footer role="contentinfo">
-            <p>Footer.</p>
-        </footer>
+        <div class="container">
+
+            <header role="banner">
+                <p>Banner section</p>
+            </header>
+            <nav role="navigation">
+                <ul>
+                    <li> Home</li>
+                    <li> First link</li>
+                </ul>
+            </nav>
+            <main role="main">
+                <p>Main content.</p>
+            </main>
+            <footer role="contentinfo">
+                <p>Footer.</p>
+            </footer>
+        </div>
     </body>
 </html>
