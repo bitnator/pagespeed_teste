@@ -33,6 +33,15 @@
                 list-style: none;
             }
 
+            li {
+                display: inline;
+            }
+
+            a {
+                text-decoration: none;
+                color: #48474d;
+            }
+
             main {
                 text-align: center;
                 padding-top: 22px;
@@ -56,19 +65,19 @@
     <body>
         <div class="container">
 
-            <header role="banner">
+            <header role="banner" id="banner">
                 <p>Banner section</p>
             </header>
-            <nav role="navigation">
+            <nav role="navigation" id="navigation">
                 <ul>
-                    <li> Home</li>
-                    <li> First link</li>
+                    <li><a href="#banner">Home</a> </li>
+                    <li><a href="#main">Content</a> </li>
                 </ul>
             </nav>
-            <main role="main">
+            <main role="main" id="main">
                 <p>Main content.</p>
             </main>
-            <footer role="contentinfo">
+            <footer role="contentinfo" id="footer">
                 <p>Footer.</p>
             </footer>
         </div>
