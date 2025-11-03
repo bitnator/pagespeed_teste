@@ -9,6 +9,7 @@
         <!-- All critical CSS is inlined to prevent render-blocking requests -->
         <style>
             body {
+                background-color: #e9e9e9;
                 margin: 0;
                 margin-top: -16px;
             }
@@ -25,12 +26,13 @@
 
             nav {
                 text-align: center;
-                background: #fcf5ff;
+                background: #ece8ff;
                 padding: 1px;
             }
 
             ul {
-                list-style: none;
+                    list-style: none;
+                    padding: 0;
             }
 
             li {
@@ -38,8 +40,12 @@
             }
 
             a {
-                text-decoration: none;
-                color: #48474d;
+                    margin-right: 8px;
+                    text-decoration: none;
+                    color: #48474d;
+                    font-size: 22px;
+                    color: #7030b5;
+                    margin-left: 8px;
             }
 
             main {
@@ -48,8 +54,7 @@
             }
 
             footer {
-                position: absolute;
-                bottom: -22px;
+                position: relative;
                 padding-left: 44px;
                 background: #e3e3e3;
                 width: -webkit-fill-available;
@@ -63,13 +68,17 @@
                 border-radius: 50%;
                 margin-bottom: 22px;
             }
+
+            img.img_content {
+                width: 311px;
+            }
     </style>
     </head>
     <body>
         <div class="container">
 
             <header role="banner" id="banner">
-                <img src="logo.jpg" class="logo" alt="">
+                <img src="logo.jpg" class="logo" alt>
             </header>
             <nav role="navigation" id="navigation">
                 <ul>
@@ -78,7 +87,8 @@
                 </ul>
             </nav>
             <main role="main" id="main">
-                <p>Main content.</p>
+                <p>Testing with multiple images.</p>
+                <img src="under_construction_test.png" class="img_content" alt="">
             </main>
             <footer role="contentinfo" id="footer">
                 <p>Footer.</p>
