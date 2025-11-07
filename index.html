@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- Google tag (gtag.js) -->
+        <script async
+            src="https://www.googletagmanager.com/gtag/js?id=G-L1FLE58QWM"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-L1FLE58QWM');
+        </script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description"
             content="Trying to achieve a perfect score at google PageSpeed">
         <title>Perfect PageSpeed</title>
-        <!-- All critical CSS is inlined to prevent render-blocking requests -->
         <style>
             body {
                 background-color: #e9e9e9;
@@ -88,7 +97,7 @@
             </nav>
             <main role="main" id="main">
                 <p>Testing with multiple images.</p>
-                <img src="under_construction_test.png" class="img_content" alt="">
+                <img src="under_construction_test.png" class="img_content" alt>
             </main>
             <footer role="contentinfo" id="footer">
                 <p>Footer.</p>
